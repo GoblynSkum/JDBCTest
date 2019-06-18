@@ -36,7 +36,6 @@ public class JDBCTest {
 		try {
 			Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
 			//Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-			//Class.forName("oracle.jdbc.driver.OracleDriver");
 			} 
 		catch(java.lang.ClassNotFoundException e) {
 			System.err.println("ClassNotFoundException: ");
@@ -44,7 +43,6 @@ public class JDBCTest {
 		}
 		try {
 			//con = DriverManager.getConnection(url, userid, password);
-			//con = oracle.jdbc("jdbc:odbc:Driver={OracleDriver};DBQ=DATABASE;UID=USER;PWD=PASSWORD");
 			con = DriverManager.getConnection("jdbc:odbc:Driver={Oracle73 Ver 2.5};DBQ=DATABASE;UID=USER;PWD=PASSWORD");
 		} catch(SQLException ex) {
 			System.err.println(" ");
@@ -54,4 +52,3 @@ public class JDBCTest {
 	}
 
 }
-
